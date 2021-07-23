@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Ubuntu+Mono:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* navigation bar */
+body{
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar{
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 10%;
+    justify-content:space-between;
+    align-items: center;
+    background: rgb(11 12 11 / 50%);
+    padding: 5px 0px 5px 5px;
+    z-index: 10000;
+    position: sticky;
+}
+#navbar h1{
+    color: #d4cbcb;
+    border: 6px solid #d4cbcb;
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 13px;
+    margin: 5px;
+    border: 1px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #d4cbcb;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* vido-container */
+#video-container{  
+    position:relative;
+    margin-top: -400px;
+    top: 0px;
+    filter: brightness(70%);
+    z-index: -10;
+}
+/* Center-heading */
+.center{
+    top: 0;
+    left: 0;
+    z-index: 12;
+    opacity: 0.7;
+    height:100px;
+    width: 550px;
+    background: rgb(95 106 180 / 88%);
+    transform: translate(500px,-470px);
+    padding: 28px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#span-name{
+    color: rgb(68, 33, 27);
+}
+/* main-container */
+#main-container{
+    
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    height: 850px;
+}
+#main-container h2{
+    margin:-95px 0px 50px 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#container img{
+    height: 500px;
+    width: 400px;
+    margin-left:100px;
+
+}
+#container #list{
+    margin-right: 35px;
+    float: right;
+    margin-left: 200px;
+}
+#list ul li{
+    padding: 5px;
+    list-style:none;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#list ul li a{
+    text-decoration: none;
+    color: #000;
+}
+/* nested-list */
+#firstYear{
+     visibility: hidden;
+     padding: 2px;
+     flex-basis: 30%;
+     flex-wrap: wrap;
+}
+#secondYear{
+     visibility: hidden;
+     padding: 10px;
+     flex-basis: 30%;
+}
+#firstyearSubs{
+    visibility: hidden;
+    padding: 12px;
+}
+#secondyearsubs{
+    visibility: hidden;
+    padding: 12px;
+}
+.para{
+    visibility: hidden;
+    font-size: 0.8rem;
+}
+#firstYear ol li a{
+    color: #000;
+    text-decoration: none;
+}
+#secondYear ol li a{
+    color: #000;
+    text-decoration: none;
+  
+}
+#container ol{
+    display: grid;
+    
+    grid-gap: 10px; 
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+/* funwithstrings section */
+
+#fun-with-strings{
+    background:url('slava-abramovitch-enAcB20iHAg-unsplash.jpg')no-repeat center center/cover;
+    opacity: 0.8915;
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#fun-with-strings div{
+    display: flex;
+    height: 450px;
+    width: 600px;
+    margin:80px;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 0px 12px 8px 13px #000;
+}
+#fun-with-strings div form{
+    display: flex;
+    margin: 20px;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#string-1{
+    margin: 12px;
+    border-radius: 8px;
+    padding: 3px;
+    border-style: none;
+    width: 180px;
+    font-family: 'Ubuntu', sans-serif;
+}
+label[for="string-2"]{
+    visibility: hidden;
+}
+#string-2{
+    margin: 12px;
+    border-radius: 8px;
+    padding: 3px;
+    border-style: none;
+    width: 180px;
+    font-family: 'Ubuntu', sans-serif;
+    visibility: hidden;
+}
+#options{
+    width: 200px;
+    border-style: none;
+    border-radius: 8px;
+    margin: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#submit{
+    font-size: 0.8rem;
+}
+#result{
+    color: rgba(161, 108, 108, 0.651);
+    text-shadow: 0px 3px 2px #1f1f1f;
+    font-size: 2.1rem;
+}
+
+/* funwithnumbers section */
+
+#fun-with-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 850px;
+    width: 100%;
+}
+#fun-with-numbers h2{
+    top: 0px;
+    left: 0;
+    margin-top: 10px;
+}
+#fun-with-numbers div{
+    border: 8px dashed #000;
+    height: 450px;
+    border-radius: 30px;
+    margin: 80px;
+    width: 600px;
+    display: flex;
+    box-shadow: 0px 2px 5px 8px #1f1f1f;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+
+}
+#fun-with-numbers div form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    
+}
+#fun-with-numbers div form label{
+    padding: 5px;
+    margin: 2px;
+   
+}
+#fun-with-numbers div form select{
+    padding: 5px;
+    margin: 2px;
+    width: 100px;
+    border-radius: 30px;
+   
+}
+#fun-with-numbers div form input{
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 8px;
+ 
+}
+input[value="Zodiac Sign"]{
+    width: 200px;
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1f1f1f;
+    width: 100%;
+}
+footer p{
+    color: #f0e7e7;
+}
+footer p a{
+    color: #d4cbcb;
+    text-decoration: none;
+}
+.fa-facebook-official,.fa-instagram,.fa-twitter,.fa-linkedin-square{
+    filter: invert(100%);
+    transition: all 1s;
+}
+.fa-facebook-official:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin-square:hover{
+    color: #d8bebe;
+}
+
+
+/* icons */
+.fa{
+    padding: 5px;
+    cursor: pointer;
+}
+.fa-sort-desc:hover{
+    color: tomato;
+}
+/* pseudo-classes */
+
+/* navbar hover effect */
+#navbar ul li:hover{
+    border: 2px solid;
+   filter: invert(100%);
+}
+#list ul li a:visited{
+    color:royalblue;
+}
+#list ul li a:active{
+    color:tomato;
+}
+
+/* Utility Class */
+.main-heading{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.btn{
+    width: 120px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border-style: none;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 8px 4px #000;
+}
